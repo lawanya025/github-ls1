@@ -1,1 +1,40 @@
+1. Building Systems with ChatGPT API:
+We started with learning how language model works(llm), supervised learning. There are two types of llm: Base llm and Instruction tuned llm.
+To convert base llm to instruction tuned llm we have to follow a certain steps-train base llm-further train the model(fine-tuning). Also learnt about
+tokens, tokens limit. How the system works: system(sets tone of assistant)-assistant(llm response)-user(prompt). Further we understand evaluating inputs:
+classification, moderation. Next process inputs: chain of thought reasoning, chaining prompts and did evaluation programs.
 
+
+2. ChatGPT Prompt engineering for developers:
+We start by learning two principles of promptig: 1 write clear instructions 2 give model time to think.
+prnciple 1: tactic 1: use delimeters to clearly indicate distinct parts of input
+tactic 2 ask for structured output
+tactic 3 check whether conditions are statisfied-check assumptions required to complete task
+tavtic 4 few shot prompting, give successfull examples of compling task then ask model to perform. 
+Principle 2
+tactic 1: specify steps to complete a task
+tactic 2: instruct model to work out its own solutio before conclusion.
+ Model limitations: Hallucinations
+ summarize text-inferring(extract sentiment-positive/negative)-transforming(translate to different language/formats)-made chatbot.
+ 
+ 
+ 3. LangChain for LLm application development: 
+ open source development for LLM application, ways to combine components.
+ .models .prompts .indexes .chains .agents
+ Conversation Buffer Windows memory: it remembers the last line only
+ Conversation Token Buffer memory: there's limit
+ Converstion summary memory
+ Chains: works on sequential chains i.e. output of one chain is input to another
+ embeddings: text similar content- similar vector
+ Stuff method
+ combining information: Map reduce-refine-map rerank-evaluating
+ 
+ 
+ 4. How diffuse model work:
+ Sampling: we take the noise sample-trained NN-precited noise
+ we take the extra noise and remove the predicted noise, add additional noise
+ Neural networks: UNet predict the noise-we take image and segment it and the size of input and output image is same
+ Training: predict noise(NN learns) learn what is not noise
+ controlling control model and what it generates
+ context-vector for controlling generates
+ Intution: adding noise, training neural networks to make sprites.
